@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Cards</title>
+
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900 border-b border-slate-800">
+
+        <div class="max-w-6xl mx-auto px-6 py-4
+                    flex items-center justify-between">
+
+            <a href="../index.html"
+               class="text-2xl font-bold text-blue-400">
+                Weather App
+            </a>
+
+            <a href="../index.html"
+               class="text-slate-300 hover:text-blue-400 transition">
+                Home
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+
+            <p class="text-blue-400
+                      uppercase
+                      tracking-widest
+                      text-sm
+                      font-semibold
+                      mb-3">
+
+                Weather Cards
+
+            </p>
+
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+                City Weather
+            </h1>
+
+            <p class="text-slate-400 max-w-xl mx-auto">
+                A collection of simple and responsive weather cards
+                built with Tailwind CSS.
+            </p>
+
+        </div>
+
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1
+                    sm:grid-cols-2
+                    lg:grid-cols-3
+                    gap-6">
+
+
+            <!-- ================= CARD 1 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <!-- Top -->
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            Chattogram
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            Bangladesh
+                        </p>
+
+                    </div>
+
+                    <span class="bg-green-500/20
+                                 text-green-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Good
+
+                    </span>
+
+                </div>
+
+
+                <!-- Weather -->
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            29°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Partly Cloudy
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🌤️
+                    </div>
+
+                </div>
+
+
+                <!-- Bottom Information -->
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            72%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            14 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARD 2 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            Dhaka
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            Bangladesh
+                        </p>
+
+                    </div>
+
+                    <span class="bg-yellow-500/20
+                                 text-yellow-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Moderate
+
+                    </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            31°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Sunny
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        ☀️
+                    </div>
+
+                </div>
+
+
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            65%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            11 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARD 3 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            Sylhet
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            Bangladesh
+                        </p>
+
+                    </div>
+
+                    <span class="bg-blue-500/20
+                                 text-blue-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Cool
+
+                    </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            25°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Rainy
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🌧️
+                    </div>
+
+                </div>
+
+
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            84%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            9 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARD 4 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            London
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            United Kingdom
+                        </p>
+
+                    </div>
+
+                    <span class="bg-purple-500/20
+                                 text-purple-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Cloudy
+
+                    </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            18°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Cloudy
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        ☁️
+                    </div>
+
+                </div>
+
+
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            68%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            17 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARD 5 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            Tokyo
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            Japan
+                        </p>
+
+                    </div>
+
+                    <span class="bg-green-500/20
+                                 text-green-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Good
+
+                    </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            24°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Clear Sky
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        🌤️
+                    </div>
+
+                </div>
+
+
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            61%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            13 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CARD 6 ================= -->
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex items-center justify-between mb-6">
+
+                    <div>
+
+                        <h2 class="text-xl font-bold">
+                            New York
+                        </h2>
+
+                        <p class="text-sm text-slate-500">
+                            United States
+                        </p>
+
+                    </div>
+
+                    <span class="bg-red-500/20
+                                 text-red-400
+                                 text-xs
+                                 font-semibold
+                                 px-3 py-1
+                                 rounded-full">
+
+                        Hot
+
+                    </span>
+
+                </div>
+
+
+                <div class="flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-5xl font-bold">
+                            32°
+                        </p>
+
+                        <p class="text-slate-400 mt-2">
+                            Sunny
+                        </p>
+
+                    </div>
+
+                    <div class="text-6xl">
+                        ☀️
+                    </div>
+
+                </div>
+
+
+                <div class="border-t
+                            border-slate-800
+                            mt-6
+                            pt-5
+                            flex items-center justify-between">
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Humidity
+                        </p>
+
+                        <p class="font-semibold">
+                            58%
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-xs text-slate-500">
+                            Wind
+                        </p>
+
+                        <p class="font-semibold">
+                            19 km/h
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Button -->
+        <div class="text-center mt-10">
+
+            <a href="cities.html"
+               class="inline-block
+                      bg-blue-600
+                      hover:bg-blue-700
+                      px-7 py-3
+                      rounded-xl
+                      font-semibold
+                      transition">
+
+                View All Cities
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800
+                   mt-10
+                   py-6
+                   text-center
+                   text-slate-500">
+
+        <p>
+            © 2026 Weather Dashboard
+        </p>
+
+    </footer>
+
+</body>
+</html>

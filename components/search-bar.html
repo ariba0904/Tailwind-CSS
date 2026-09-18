@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Bar Component</title>
+
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900 border-b border-slate-800">
+
+        <div class="max-w-6xl mx-auto px-6 py-4
+                    flex items-center justify-between">
+
+            <h1 class="text-2xl font-bold text-blue-400">
+                Weather App
+            </h1>
+
+            <a href="../index.html"
+               class="text-slate-300 hover:text-blue-400 transition">
+                Home
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+
+            <p class="text-blue-400
+                      uppercase
+                      tracking-widest
+                      text-sm
+                      font-semibold
+                      mb-3">
+                Search Component
+            </p>
+
+            <h2 class="text-4xl font-bold mb-4">
+                Find a City
+            </h2>
+
+            <p class="text-slate-400">
+                Search for weather information by city name.
+            </p>
+
+        </div>
+
+
+        <!-- Search Box -->
+        <div class="bg-slate-900
+                    border border-slate-800
+                    rounded-2xl
+                    p-5 sm:p-6">
+
+            <label for="city"
+                   class="block
+                          text-sm
+                          font-medium
+                          text-slate-300
+                          mb-2">
+
+                City Name
+
+            </label>
+
+
+            <!-- Input + Button -->
+            <div class="flex flex-col sm:flex-row gap-3">
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter city name..."
+
+                    class="flex-1
+                           bg-slate-800
+                           border border-slate-700
+                           rounded-xl
+                           px-4 py-3
+                           text-white
+                           placeholder-slate-500
+                           outline-none
+                           focus:border-blue-500
+                           focus:ring-2
+                           focus:ring-blue-500/20
+                           transition"
+                >
+
+
+                <button
+                    class="bg-blue-600
+                           hover:bg-blue-700
+                           active:scale-95
+                           px-6 py-3
+                           rounded-xl
+                           font-semibold
+                           transition duration-200">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recent Searches -->
+        <section class="mt-10">
+
+            <div class="flex items-center justify-between mb-5">
+
+                <h3 class="text-xl font-bold">
+                    Recent Searches
+                </h3>
+
+                <button
+                    class="text-sm
+                           text-slate-400
+                           hover:text-red-400
+                           transition">
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+
+            <!-- Search Cards -->
+            <div class="space-y-3">
+
+                <!-- Item 1 -->
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-4
+                            flex items-center justify-between
+                            hover:border-blue-500
+                            transition">
+
+                    <div>
+
+                        <h4 class="font-semibold">
+                            Chattogram
+                        </h4>
+
+                        <p class="text-sm text-slate-500">
+                            Bangladesh
+                        </p>
+
+                    </div>
+
+                    <span class="text-slate-400">
+                        29°C
+                    </span>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-4
+                            flex items-center justify-between
+                            hover:border-blue-500
+                            transition">
+
+                    <div>
+
+                        <h4 class="font-semibold">
+                            Dhaka
+                        </h4>
+
+                        <p class="text-sm text-slate-500">
+                            Bangladesh
+                        </p>
+
+                    </div>
+
+                    <span class="text-slate-400">
+                        31°C
+                    </span>
+
+                </div>
+
+
+                <!-- Item 3 -->
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-4
+                            flex items-center justify-between
+                            hover:border-blue-500
+                            transition">
+
+                    <div>
+
+                        <h4 class="font-semibold">
+                            Tokyo
+                        </h4>
+
+                        <p class="text-sm text-slate-500">
+                            Japan
+                        </p>
+
+                    </div>
+
+                    <span class="text-slate-400">
+                        24°C
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Practice Cards -->
+        <section class="mt-12">
+
+            <h3 class="text-xl font-bold mb-5">
+                Search Tips
+            </h3>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-5">
+
+                    <p class="text-blue-400 text-2xl mb-3">
+                        01
+                    </p>
+
+                    <h4 class="font-bold mb-2">
+                        Type a City
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-6">
+                        Enter the name of any city in the search box.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-5">
+
+                    <p class="text-blue-400 text-2xl mb-3">
+                        02
+                    </p>
+
+                    <h4 class="font-bold mb-2">
+                        Click Search
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-6">
+                        Press the search button to find weather data.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-slate-900
+                            border border-slate-800
+                            rounded-xl
+                            p-5">
+
+                    <p class="text-blue-400 text-2xl mb-3">
+                        03
+                    </p>
+
+                    <h4 class="font-bold mb-2">
+                        View Weather
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-6">
+                        Check the temperature and weather conditions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800
+                   mt-10
+                   py-6
+                   text-center
+                   text-slate-500">
+
+        <p>
+            © 2026 Weather Dashboard
+        </p>
+
+    </footer>
+
+</body>
+</html>

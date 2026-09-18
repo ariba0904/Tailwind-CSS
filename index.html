@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,195 +14,281 @@
 <body class="bg-slate-950 text-white min-h-screen">
 
     <!-- Navbar -->
-    <nav class="border-b border-slate-800 bg-slate-900">
+    <nav class="border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-
-            <h1 class="text-2xl font-bold">
-                ☁️ Weather
+            <h1 class="text-2xl font-bold text-blue-400">
+                Weather App
             </h1>
 
-            <button class="bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-lg transition">
-                Search
+            <div class="hidden md:flex items-center gap-8">
+
+                <a href="./index.html"
+                   class="text-blue-400">
+                    Home
+                </a>
+
+                <a href="./pages/forecast.html"
+                   class="text-slate-300 hover:text-blue-400 transition">
+                    Forecast
+                </a>
+
+                <a href="./pages/cities.html"
+                   class="text-slate-300 hover:text-blue-400 transition">
+                    Cities
+                </a>
+
+                <a href="./pages/about.html"
+                   class="text-slate-300 hover:text-blue-400 transition">
+                    About
+                </a>
+
+            </div>
+
+            <button id="menuButton"
+                    class="md:hidden text-2xl">
+                ☰
             </button>
 
         </div>
 
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+             class="hidden md:hidden px-6 pb-5">
+
+            <div class="flex flex-col gap-4">
+
+                <a href="./index.html"
+                   class="text-blue-400">
+                    Home
+                </a>
+
+                <a href="./pages/forecast.html"
+                   class="text-slate-300">
+                    Forecast
+                </a>
+
+                <a href="./pages/cities.html"
+                   class="text-slate-300">
+                    Cities
+                </a>
+
+                <a href="./pages/about.html"
+                   class="text-slate-300">
+                    About
+                </a>
+
+            </div>
+
+        </div>
     </nav>
 
 
     <!-- Main -->
-    <main class="max-w-6xl mx-auto px-6 py-10">
+    <main class="max-w-7xl mx-auto px-6 py-12">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Weather Dashboard
+            </h2>
+
+            <p class="text-slate-400">
+                Search for a city and check its weather
+            </p>
+
+        </div>
+
 
         <!-- Search -->
-        <div class="flex gap-3 mb-10">
+        <div class="max-w-2xl mx-auto mb-12">
 
-            <input
-                type="text"
-                placeholder="Enter city name..."
-                class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-5 py-3 outline-none focus:border-blue-500"
-            >
+            <div class="flex flex-col sm:flex-row gap-3">
 
-            <button
-                class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">
-                Search
-            </button>
+                <input
+                    id="citySearch"
+                    type="text"
+                    placeholder="Enter city name..."
+                    class="flex-1 px-5 py-3 rounded-xl
+                           bg-slate-900
+                           border border-slate-700
+                           outline-none
+                           focus:border-blue-500
+                           focus:ring-2
+                           focus:ring-blue-500/20"
+                >
+
+                <button
+                    id="searchButton"
+                    class="px-6 py-3
+                           bg-blue-600
+                           rounded-xl
+                           font-semibold
+                           hover:bg-blue-500
+                           active:scale-95
+                           transition">
+
+                    Search
+
+                </button>
+
+            </div>
 
         </div>
 
 
         <!-- Current Weather -->
-        <div class="bg-gradient-to-r from-blue-900 to-slate-900 border border-slate-700 rounded-3xl p-8 mb-8">
+        <section class="max-w-4xl mx-auto">
 
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-3xl
+                        p-8
+                        shadow-xl">
 
-                <div>
+                <!-- Location -->
+                <div class="flex items-center justify-between mb-8">
 
-                    <p class="text-slate-400 mb-2">
-                        Current Weather
-                    </p>
+                    <div>
 
-                    <h2 class="text-4xl font-bold mb-2">
-                        Chattogram
-                    </h2>
+                        <p class="text-slate-400 text-sm mb-1">
+                            Current Weather
+                        </p>
 
-                    <p class="text-slate-400">
-                        Friday, September 18
-                    </p>
+                        <h3 id="cityName"
+                            class="text-3xl font-bold">
+                            Chattogram
+                        </h3>
 
-                </div>
+                    </div>
 
-
-                <div class="text-center">
-
-                    <div class="text-7xl mb-2">
+                    <div class="text-5xl">
                         ☀️
                     </div>
 
-                    <p class="text-5xl font-bold">
+                </div>
+
+
+                <!-- Temperature -->
+                <div class="text-center mb-10">
+
+                    <p id="temperature"
+                       class="text-6xl font-bold">
                         29°C
                     </p>
 
-                    <p class="text-slate-400 mt-2">
-                        Sunny
+                    <p id="condition"
+                       class="text-xl text-slate-400 mt-3">
+                        Partly Cloudy
                     </p>
+
+                </div>
+
+
+                <!-- Weather Info -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+
+                    <!-- Humidity -->
+                    <div class="bg-slate-800
+                                rounded-2xl
+                                p-5">
+
+                        <p class="text-slate-400 text-sm">
+                            Humidity
+                        </p>
+
+                        <p id="humidity"
+                           class="text-2xl font-semibold mt-2">
+                            78%
+                        </p>
+
+                    </div>
+
+
+                    <!-- Wind -->
+                    <div class="bg-slate-800
+                                rounded-2xl
+                                p-5">
+
+                        <p class="text-slate-400 text-sm">
+                            Wind Speed
+                        </p>
+
+                        <p id="wind"
+                           class="text-2xl font-semibold mt-2">
+                            12 km/h
+                        </p>
+
+                    </div>
+
+
+                    <!-- Feels Like -->
+                    <div class="bg-slate-800
+                                rounded-2xl
+                                p-5">
+
+                        <p class="text-slate-400 text-sm">
+                            Feels Like
+                        </p>
+
+                        <p class="text-2xl font-semibold mt-2">
+                            31°C
+                        </p>
+
+                    </div>
+
+
+                    <!-- UV -->
+                    <div class="bg-slate-800
+                                rounded-2xl
+                                p-5">
+
+                        <p class="text-slate-400 text-sm">
+                            UV Index
+                        </p>
+
+                        <p class="text-2xl font-semibold mt-2">
+                            6
+                        </p>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-
-        <!-- Weather Information -->
-        <h3 class="text-2xl font-bold mb-5">
-            Today's Information
-        </h3>
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-
-            <!-- Card 1 -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-blue-500 transition">
-
-                <p class="text-slate-400 mb-3">
-                    💧 Humidity
-                </p>
-
-                <h4 class="text-3xl font-bold">
-                    72%
-                </h4>
-
-            </div>
-
-
-            <!-- Card 2 -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-blue-500 transition">
-
-                <p class="text-slate-400 mb-3">
-                    💨 Wind
-                </p>
-
-                <h4 class="text-3xl font-bold">
-                    14 km/h
-                </h4>
-
-            </div>
-
-
-            <!-- Card 3 -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-blue-500 transition">
-
-                <p class="text-slate-400 mb-3">
-                    🌡️ Feels Like
-                </p>
-
-                <h4 class="text-3xl font-bold">
-                    31°C
-                </h4>
-
-            </div>
-
-
-            <!-- Card 4 -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 hover:border-blue-500 transition">
-
-                <p class="text-slate-400 mb-3">
-                    👁️ Visibility
-                </p>
-
-                <h4 class="text-3xl font-bold">
-                    8 km
-                </h4>
-
-            </div>
-
-        </div>
-
-
-        <!-- Forecast -->
-        <h3 class="text-2xl font-bold mt-10 mb-5">
-            5-Day Forecast
-        </h3>
-
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-
-            <div class="bg-slate-900 p-5 rounded-2xl text-center">
-                <p class="text-slate-400">Sat</p>
-                <div class="text-4xl my-3">☀️</div>
-                <p class="font-bold">30°C</p>
-            </div>
-
-            <div class="bg-slate-900 p-5 rounded-2xl text-center">
-                <p class="text-slate-400">Sun</p>
-                <div class="text-4xl my-3">🌤️</div>
-                <p class="font-bold">29°C</p>
-            </div>
-
-            <div class="bg-slate-900 p-5 rounded-2xl text-center">
-                <p class="text-slate-400">Mon</p>
-                <div class="text-4xl my-3">🌧️</div>
-                <p class="font-bold">27°C</p>
-            </div>
-
-            <div class="bg-slate-900 p-5 rounded-2xl text-center">
-                <p class="text-slate-400">Tue</p>
-                <div class="text-4xl my-3">⛈️</div>
-                <p class="font-bold">26°C</p>
-            </div>
-
-            <div class="bg-slate-900 p-5 rounded-2xl text-center">
-                <p class="text-slate-400">Wed</p>
-                <div class="text-4xl my-3">☀️</div>
-                <p class="font-bold">31°C</p>
-            </div>
-
-        </div>
+        </section>
 
     </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-10">
+
+        <div class="max-w-7xl mx-auto px-6 py-8
+                    flex flex-col md:flex-row
+                    items-center justify-between
+                    gap-3">
+
+            <p class="text-slate-500 text-sm">
+                © 2026 Weather App
+            </p>
+
+            <p class="text-slate-500 text-sm">
+                Built with Tailwind CSS
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/weather.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 
 </html>
-```

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Cities</title>
+
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900 border-b border-slate-800">
+
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold text-blue-400">
+                ☁️ Weather
+            </h1>
+
+            <a href="../index.html"
+                class="text-slate-400 hover:text-blue-400 transition">
+                Home
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
+    <main class="max-w-6xl mx-auto px-6 py-10">
+
+        <!-- Heading -->
+        <div class="mb-10">
+
+            <p class="text-blue-400 font-semibold mb-2">
+                WORLD WEATHER
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-3">
+                Popular Cities
+            </h2>
+
+            <p class="text-slate-400">
+                Explore weather conditions in different cities.
+            </p>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="flex flex-col sm:flex-row gap-3 mb-10">
+
+            <input
+                type="text"
+                placeholder="Search city..."
+                class="flex-1 bg-slate-900 border border-slate-700
+                       rounded-xl px-5 py-3 outline-none
+                       focus:border-blue-500"
+            >
+
+            <button
+                class="bg-blue-600 hover:bg-blue-700
+                       px-6 py-3 rounded-xl
+                       font-semibold transition">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- City Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+            <!-- Chattogram -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            Bangladesh
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            Chattogram
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        ☀️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            29°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Sunny
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 72%</p>
+                        <p>Wind 14 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dhaka -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            Bangladesh
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            Dhaka
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        🌤️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            31°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Partly Cloudy
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 68%</p>
+                        <p>Wind 12 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sylhet -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            Bangladesh
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            Sylhet
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        🌧️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            27°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Rainy
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 80%</p>
+                        <p>Wind 10 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- London -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            United Kingdom
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            London
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        ☁️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            16°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Cloudy
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 75%</p>
+                        <p>Wind 18 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tokyo -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            Japan
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            Tokyo
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        🌤️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            24°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Partly Cloudy
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 64%</p>
+                        <p>Wind 9 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- New York -->
+            <div class="bg-slate-900 border border-slate-800
+                        rounded-2xl p-6
+                        hover:border-blue-500
+                        hover:-translate-y-1
+                        transition duration-300">
+
+                <div class="flex justify-between items-start">
+
+                    <div>
+                        <p class="text-slate-400 text-sm">
+                            United States
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-1">
+                            New York
+                        </h3>
+                    </div>
+
+                    <span class="text-4xl">
+                        🌧️
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between items-end mt-8">
+
+                    <div>
+                        <p class="text-4xl font-bold">
+                            21°C
+                        </p>
+
+                        <p class="text-slate-400 mt-1">
+                            Rainy
+                        </p>
+                    </div>
+
+                    <div class="text-right text-sm text-slate-500">
+
+                        <p>Humidity 70%</p>
+                        <p>Wind 16 km/h</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 mt-10">
+
+        <div class="max-w-6xl mx-auto px-6 py-6 text-center text-slate-500">
+
+            <p>
+                © 2026 Weather Dashboard
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

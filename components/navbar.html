@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Navbar Component</title>
+
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="bg-slate-900
+                border-b border-slate-800">
+
+        <div class="max-w-6xl mx-auto
+                    px-6 py-4
+                    flex items-center justify-between">
+
+
+            <!-- Logo -->
+
+            <a href="../index.html"
+               class="text-2xl
+                      font-bold
+                      text-blue-400
+                      hover:text-blue-300
+                      transition">
+
+                Weather App
+
+            </a>
+
+
+            <!-- Desktop Menu -->
+
+            <div class="hidden md:flex
+                        items-center
+                        gap-8">
+
+                <a href="../index.html"
+                   class="text-blue-400
+                          font-semibold
+                          hover:text-blue-300
+                          transition">
+
+                    Home
+
+                </a>
+
+
+                <a href="forecast-card.html"
+                   class="text-slate-300
+                          hover:text-blue-400
+                          transition">
+
+                    Forecast
+
+                </a>
+
+
+                <a href="weather-card.html"
+                   class="text-slate-300
+                          hover:text-blue-400
+                          transition">
+
+                    Cities
+
+                </a>
+
+
+                <a href="about.html"
+                   class="text-slate-300
+                          hover:text-blue-400
+                          transition">
+
+                    About
+
+                </a>
+
+            </div>
+
+
+            <!-- Desktop Button -->
+
+            <button
+                class="hidden md:block
+                       bg-blue-600
+                       hover:bg-blue-700
+                       px-5 py-2
+                       rounded-lg
+                       font-semibold
+                       transition
+                       active:scale-95">
+
+                Get Started
+
+            </button>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="md:hidden
+                       border border-slate-700
+                       hover:border-blue-500
+                       px-3 py-2
+                       rounded-lg
+                       text-xl
+                       transition">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= DEMO CONTENT ================= -->
+
+    <main class="max-w-4xl mx-auto
+                 px-6 py-16
+                 text-center">
+
+        <p class="text-blue-400
+                  uppercase
+                  tracking-widest
+                  text-sm
+                  font-semibold
+                  mb-4">
+
+            Navbar Practice
+
+        </p>
+
+
+        <h1 class="text-4xl
+                   sm:text-5xl
+                   font-bold
+                   mb-6">
+
+            Responsive Navbar
+
+        </h1>
+
+
+        <p class="text-slate-400
+                  max-w-2xl
+                  mx-auto
+                  leading-8
+                  mb-8">
+
+            Resize your browser window and observe how the
+            navigation menu changes between desktop and mobile
+            layouts.
+
+        </p>
+
+
+        <a href="../index.html"
+           class="inline-block
+                  bg-blue-600
+                  hover:bg-blue-700
+                  px-6 py-3
+                  rounded-xl
+                  font-semibold
+                  transition">
+
+            Back to Dashboard
+
+        </a>
+
+    </main>
+
+
+    <!-- ================= PRACTICE SECTION ================= -->
+
+    <section class="max-w-5xl mx-auto
+                    px-6 pb-16">
+
+        <div class="grid grid-cols-1
+                    md:grid-cols-2
+                    gap-6">
+
+
+            <!-- Card 1 -->
+
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6">
+
+                <h2 class="text-xl
+                           font-bold
+                           mb-4">
+
+                    Desktop Navbar
+
+                </h2>
+
+
+                <p class="text-slate-400
+                          leading-7
+                          mb-4">
+
+                    On medium and larger screens, the navigation
+                    links and Get Started button are displayed.
+
+                </p>
+
+
+                <code class="text-blue-400
+                             bg-slate-800
+                             px-3 py-2
+                             rounded-lg
+                             inline-block">
+
+                    md:flex
+
+                </code>
+
+            </div>
+
+
+            <!-- Card 2 -->
+
+            <div class="bg-slate-900
+                        border border-slate-800
+                        rounded-2xl
+                        p-6">
+
+                <h2 class="text-xl
+                           font-bold
+                           mb-4">
+
+                    Mobile Navbar
+
+                </h2>
+
+
+                <p class="text-slate-400
+                          leading-7
+                          mb-4">
+
+                    On small screens, the desktop links disappear
+                    and the menu button becomes visible.
+
+                </p>
+
+
+                <code class="text-blue-400
+                             bg-slate-800
+                             px-3 py-2
+                             rounded-lg
+                             inline-block">
+
+                    md:hidden
+
+                </code>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-slate-800
+                   py-6
+                   text-center
+                   text-slate-500">
+
+        <p>
+            © 2026 Weather Dashboard
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
